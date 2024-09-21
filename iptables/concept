@@ -1,1 +1,17 @@
 
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+ACCEPT     tcp  --  anywhere             anywhere             tcp spt:https ctstate ESTABLISHED
+ACCEPT     udp  --  anywhere             anywhere             udp spt:domain ctstate ESTABLISHED
+ACCEPT     tcp  --  anywhere             anywhere             tcp spt:domain ctstate ESTABLISHED
+ACCEPT     tcp  --  anywhere             anywhere             tcp dpt:http ctstate NEW,ESTABLISHED
+ACCEPT     tcp  --  anywhere             anywhere             tcp dpt:https ctstate NEW,ESTABLISHED
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination         
+ACCEPT     tcp  --  anywhere             anywhere             tcp dpt:https ctstate NEW,ESTABLISHED
+ACCEPT     udp  --  anywhere             anywhere             udp dpt:domain
+ACCEPT     tcp  --  anywhere             anywhere             tcp dpt:domain ctstate NEW,ESTABLISHED
