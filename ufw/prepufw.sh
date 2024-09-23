@@ -1,10 +1,10 @@
 #!/bin/bash
-
+sudo iptables-save > check1.txt
 sudo iptables -F
 sudo iptables -P INPUT ACCEPT
 sudo iptables -P OUTPUT ACCEPT
 sudo iptables -P FORWARD ACCEPT
-
+sudo iptables-save > check2.txt
 
 # Reset UFW to default settings and disable it to start clean
 sudo ufw reset
