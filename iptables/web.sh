@@ -14,4 +14,4 @@ sudo iptables -A INPUT -p tcp --sport 53 -m conntrack --ctstate ESTABLISHED -j A
 
 # Block all ICMP traffic
 sudo iptables -A INPUT -p icmp -j DROP
-sudo iptables -A OUTPUT -p icmp -j DROP
+sudo iptables -A OUTPUT -p icmp -j ACCEPT
