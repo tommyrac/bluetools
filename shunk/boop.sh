@@ -15,3 +15,6 @@ alias useraddd='\useradd'
 alias passwdd='\passwd'" >> /etc/bash.bashrc
 
 source /etc/bash.bashrc
+
+
+cant quite get this to apply to everyone
