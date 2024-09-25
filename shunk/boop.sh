@@ -13,3 +13,5 @@ alias suu='su'
 alias pwdd='pwd'
 alias useraddd='useradd'
 alias passwdd='passwd'" >> /etc/bash.bashrc
+
+source /etc/bash.bashrc
