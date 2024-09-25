@@ -1,7 +1,7 @@
 #!/bin/bash
-echo "############SSH STATUS#############" 
+echo "############ SSH STATUS #############" 
 sudo netstat -tunap | grep 22 
-echo "###########POSSIBLE SHELLS#########" 
+echo "########### POSSIBLE SHELLS #########" 
 sudo netstat -tunap | grep -E "bash|sh|python|perl|nc|php" 
-echo "###########CURRENT USERS#########" 
+echo "########### CURRENT USERS #########" 
 who
