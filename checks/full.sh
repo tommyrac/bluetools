@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "############ sudo group #############" 
-sudo getent sudo
+sudo getent group sudo
 echo "############ SSH STATUS #############" 
 sudo netstat -tunap | grep 22 
 echo "########### POSSIBLE SHELLS #########" 
