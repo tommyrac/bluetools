@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define backup location - ensure this is a secure and obscure location
-BACKUP_DIR="/usr/share/gutentag/sicherung$(date +%F_%H-%M-%S)"
+BACKUP_DIR="/usr/share/gutentag/sicherung/$(date +%F_%H-%M-%S)"
 mkdir -p "$BACKUP_DIR"
 
 echo "Backing up critical files to $BACKUP_DIR..."
