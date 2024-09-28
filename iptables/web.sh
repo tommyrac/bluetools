@@ -1,7 +1,8 @@
 #!/bin/bash
 
-# Flush existing rules
-sudo iptables -F
+sudo iptables -A INPUT -p tcp --dport 21 -j ACCEPT
+sudo iptables -A OUTPUT -p tcp --dport 21 -j ACCEPT
+
 
 # Set default policies to DROP
 sudo iptables -P INPUT DROP
