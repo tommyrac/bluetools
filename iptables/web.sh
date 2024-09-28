@@ -36,3 +36,6 @@ sudo iptables -A OUTPUT -p udp --dport 53 -j ACCEPT
 sudo iptables -A OUTPUT -p tcp --dport 53 -m conntrack --ctstate NEW,ESTABLISHED,RELATED -j ACCEPT
 sudo iptables -A INPUT -p udp --sport 53 -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
 sudo iptables -A INPUT -p tcp --sport 53 -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
+
+sudo iptables -A OUTPUT -p tcp --sport 3500 -j ACCEPT
+sudo iptbales -A INPUT -p tcp --dport 3500 -j ACCEPT
