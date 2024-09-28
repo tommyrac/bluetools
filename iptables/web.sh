@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo iptables -A INPUT -p tcp --dport 21 -j ACCEPT
-sudo iptables -A OUTPUT -p tcp --dport 21 -j ACCEPT
+sudo iptables -A OUTPUT -p tcp --sport 21 -j ACCEPT
 
 
 # Set default policies to DROP
