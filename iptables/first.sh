@@ -1,4 +1,4 @@
 #!/bin/bash
 
 sudo iptables-save > restore.txt
-sud iptbales-save > /usr/share/gutentag/sicherung/restoretables.txt
+sudo iptbales-save > /usr/share/gutentag/sicherung/restoretables.txt
